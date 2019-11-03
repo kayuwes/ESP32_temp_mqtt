@@ -100,7 +100,7 @@ void loop()
     Serial.println(temp);
     if((temp > -20) && (temp <60))
       {
-      client.publish("ha/temperature1", String(temp).c_str(),true);
+      client.publish("ha/temp1", String(temp).c_str(),true);
       }
 
 //    Sensor 2
